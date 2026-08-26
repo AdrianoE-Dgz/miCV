@@ -1,0 +1,12 @@
+#sidebar-nav {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#cv-image {
+    background-image: url("https://placehold.co/500");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75%;
+    aspect-ratio: 1/1;
+}

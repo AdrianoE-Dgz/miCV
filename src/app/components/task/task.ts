@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './task.css',
   templateUrl: './task.html',
 })
-export class Task {}
+export class Task {
+  title = input('', {transform: trimString});
+  description = input('', {transform: trimString});
+}
+
+function trimString(value: string | undefined): string {
+  return value?.trim() ?? '';
+}
