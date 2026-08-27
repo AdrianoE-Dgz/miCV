@@ -1,9 +1,7 @@
 <div class="container-fluid">
     <h1>
-        {{ title }}
+        {{ title() }}
     </h1>
     <hr>
-    <div class="text-justify" style="text-indent: 1rem;">
-        {{ description }}
-    </div>
+    <div class="text-content" [innerHTML]=(description())></div>
 </div>

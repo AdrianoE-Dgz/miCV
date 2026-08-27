@@ -1,0 +1,25 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item > .row {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    column-gap: .2rem;
+}
+
+.content {
+    min-height: 30rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.task-card {
+    height: 20rem;
+}
+
+.titles {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: condensed;
+}

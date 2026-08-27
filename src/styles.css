@@ -3,5 +3,12 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    min-height: 100vh;
+    scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+.text-content{
+    text-indent: 1rem;
+    text-align: justify;
 }

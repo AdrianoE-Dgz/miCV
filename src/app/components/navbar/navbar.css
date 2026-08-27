@@ -4,7 +4,7 @@
 }
 
 #cv-image {
-    background-image: url("https://placehold.co/500");
+    background-image: url("/assets/cv_image.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 75%;
