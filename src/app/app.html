@@ -1,60 +1,12 @@
-
-  <div class="row w-100 mt-0 p-0">
-    <div class="col-12 col-lg-3">
-      <app-navbar></app-navbar>
-    </div>
-    <div id="main-content" class="col-12 col-lg-9 p-3 rounded-2" data-bs-spy="scroll" data-bs-target="#nav-cont" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
-      <div id="cont-desc" class="content card">
-        <h6 class="text-secondary">Ciencias Computacionales</h6>
-        <h1 class="fw-bold display-1 titles">Adriano Elijah Domínguez Estrada</h1>
-        <h3 class="text-secondary titles fw-lighter">Estudiante en Sistemas Computacionales</h3>
-        <hr>
-
-        <div class="row row-lg-cols-2 text-content">
-          <div class="col">
-            <p>
-              Estudiante de Universidad enfocado en el ámbito del desarrollo de diversas aplicaciones multimedia, desde aplicaciones pequeñas destinadas a realizar
-              cálculos básicos hasta actividades más complejas encaminadas a realizar compras de forma en línea. Con una grán disposición a aprender nuevas habilidades
-              dentro de cualquier ámbito tecnológico que se le ponga en frente.
-            </p>
-            <p>
-              Ha tenido
-            </p>
-          </div>
-          <div class="col">
-            <div class="d-flex flex-column h-100">
-              <div class="flex-grow-1">
-                <h3 class="titles">Competencias</h3>
-                <p></p>
-              </div>
-              <div class="align-self-end">
-                <a class="btn btn-secondary" href="/assets/Curriculum_Vitae_Adriano_Domínguez.pdf" style="text-indent: 0; width: 8rem;" target="_blank">Ver CV</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="cont-experience" class="content card">
-        <h1 class="titles fw-bold">Experiencia</h1>
-        <hr>
-        <div class="row row-cols-3">
-          @for (cont of experiencia1; track $index) {
-            <div class="col p-1">
-              <div class="card task-card card-body">
-                <app-task [title]=(cont.title) [description]=(cont.desc)></app-task>
-              </div>
-            </div>
-          }
-        </div>
-      </div>
-      <div id="cont-tools" class="content card">
-        <h1 class="titles fw-bold">Herramientas</h1>
-        <hr>
-      </div>
-      <div id="cont-contact" class="content card">
-        <h1 class="titles fw-bold">Contacto</h1>
-        <hr>
-      </div>
-      <app-footer></app-footer>
-    </div>
+<div id="app-container" class="row no-gutters pe-lg-1">
+  <div id="navbar" class="col-12 col-lg-3">
+    <app-navbar></app-navbar>
   </div>
+  <div id="main-content" class="col-12 col-lg-9 p-4 p-lg-3 pe-lg-4" data-bs-spy="scroll" data-bs-target="#nav-cont" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <app-description></app-description>
+    <app-experience></app-experience>
+    <app-tools></app-tools>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+  </div>
+</div>

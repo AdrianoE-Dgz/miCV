@@ -1,7 +1,8 @@
 <div class="container-fluid">
-    <h3>
+    <h2 class="titles">
         {{ title() }}
-    </h3>
+        <span class="h6 text-secondary">({{ date() }})</span>
+    </h2>
     <hr>
     <div class="text-content" [innerHTML]=(description())></div>
 </div>

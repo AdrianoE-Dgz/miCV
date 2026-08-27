@@ -8,6 +8,7 @@ import { Component, input } from '@angular/core';
 })
 export class Task {
   title = input('', {transform: trimString});
+  date = input('', {transform: trimString});
   description = input('', {transform: trimString});
 }
 

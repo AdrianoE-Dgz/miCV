@@ -1,0 +1,12 @@
+<div id="cont-tools" class="content card">
+    <h1 class="titles fw-bold">Herramientas</h1>
+    <hr>
+    @for (tool of toolList; track $index) {
+        <div class="mb-3">
+            <h5>{{ tool.name }}</h5>
+            <div style="height: 5px;" class="progress" role="progressbar" [ariaValueNow]=(tool.percentage) aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" [style.width.%]=(tool.percentage)></div>
+            </div>
+        </div>
+    }
+</div>

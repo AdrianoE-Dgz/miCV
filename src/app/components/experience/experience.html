@@ -1,0 +1,13 @@
+<div id="cont-experience" class="content card">
+        <h1 class="titles fw-bold">Experiencia</h1>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          @for (cont of experiencia1; track $index) {
+            <div class="col p-1">
+              <div class="card task-card card-body">
+                <app-task [title]=(cont.title) [date]=(cont.date) [description]=(cont.desc)></app-task>
+              </div>
+            </div>
+          }
+        </div>
+      </div>

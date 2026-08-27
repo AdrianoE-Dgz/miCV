@@ -1,0 +1,26 @@
+<div id="cont-contact" class="content card">
+    <h1 class="titles fw-bold">Contacto</h1>
+    <hr>
+    <div class="row">
+        <div id="left-contact" class="col-12 col-lg-4">
+            <div class="d-flex flex-column gap-3">
+                @for (contact of contactList; track $index) {
+                    @if (contact.link == '' || contact.link == null) {
+                        <div class="text-white">
+                            <img [src]=(contact.icon) class="me-2 logo-img" alt="Icono">
+                            <span>{{ contact.text }}</span>
+                        </div>
+                    } @else {
+                        <a class="text-white" [href]=(contact.link) target="_blank">
+                            <img [src]=(contact.icon) class="me-2 logo-img" alt="Icono">
+                            <span>{{ contact.text }}</span>
+                        </a>
+                    }
+                }
+            </div>
+        </div>
+        <div class="col-12 col-lg-8">
+
+        </div>
+    </div>
+</div>

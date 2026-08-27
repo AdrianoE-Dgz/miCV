@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+    #left-contact {
+        border-right: 3px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.logo-img {
+    filter: invert(1);
+    height: 15px;
+}
